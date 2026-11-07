@@ -45,24 +45,42 @@ Program aslinya bisa diunduh di sini (sudah saya sertakan juga di folder ini):
 
 ## Cara pakai (langkah demi langkah)
 
-1. **Simpan semua file dalam satu folder**, misalnya:
-   `C:\Users\<nama-kamu>\Documents\ThinkPad-Battery-threshold`
-2. Pastikan `ChargeThreshold.exe` ada di folder yang **sama** dengan file `.lnk`.
-3. **Klik dua kali** shortcut sesuai kebutuhan, misalnya `Battery 80%.lnk`.
-4. Jendela CMD akan terbuka sebentar, menjalankan perintah, lalu menutup sendiri
+1. **Download repo ini sebagai ZIP** (tombol hijau **Code** → **Download ZIP**).
+2. Buka folder **Downloads**, lalu klik kanan file ZIP → **Extract Here**
+   (atau "Extract to `thinkpad-battery-threshold-main\`").
+3. Pastikan hasil ekstrak ada di:
+   ```
+   C:\Users\<nama-kamu>\Downloads\thinkpad-battery-threshold-main
+   ```
+   dan `ChargeThreshold.exe` berada di folder yang sama dengan file `.lnk`.
+4. **Klik dua kali** shortcut sesuai kebutuhan, misalnya `Battery 80%.lnk`.
+5. Jendela CMD akan terbuka sebentar, menjalankan perintah, lalu menutup sendiri
    setelah 5 detik. Selesai.
 
-### ⚠️ Penting: atur lokasi folder shortcut
+Tidak perlu mengedit apa pun selama kamu mengekstrak ke folder **Downloads** dan
+**tidak mengganti nama** folder hasil ekstrak.
 
-Shortcut ini menyimpan lokasi awal (*Start in*) di `C:\Users\P51\Documents`, yaitu folder
-di laptop pembuatnya. Kalau lokasi foldermu berbeda, CMD akan dijalankan di folder yang
-salah dan `ChargeThreshold` tidak akan ditemukan.
+### ⚠️ Kalau folder hasil ekstrak berbeda
 
-Cara memperbaikinya (sekali saja untuk tiap shortcut):
+Shortcut ini sudah diarahkan ke folder:
+
+```
+%USERPROFILE%\Downloads\thinkpad-battery-threshold-main
+```
+
+`%USERPROFILE%` otomatis menjadi `C:\Users\<nama-kamu>` di komputer mana pun.
+
+Kalau kamu mengekstrak ke tempat lain (misalnya `Documents`, `D:\Aplikasi`) atau
+mengganti nama foldernya, ubah **Start in** pada tiap shortcut:
 
 1. Klik **kanan** pada shortcut → **Properties**.
 2. Pada kolom **Start in**, isi dengan folder tempat file ini kamu simpan.
 3. Klik **OK**.
+4. Ulangi untuk 6 shortcut lainnya.
+
+> Catatan: kalau file ZIP diekstrak langsung ke folder Downloads tanpa subfolder,
+> pindahkan dulu semua file ke folder `thinkpad-battery-threshold-main`, atau ubah
+> **Start in** menjadi `%USERPROFILE%\Downloads`.
 
 ---
 
@@ -120,8 +138,11 @@ Sudah diuji dan berfungsi di:
 
 - **Jendela CMD muncul lalu langsung hilang?** Itu normal; perintah sudah dijalankan
   dan jendela menutup otomatis setelah 5 detik.
-- **Muncul pesan `ChargeThreshold` tidak dikenali?** Berarti *Start in* shortcut masih
-  menunjuk ke folder lain. Ikuti langkah "atur lokasi folder shortcut" di atas.
+- **Muncul pesan `ChargeThreshold` tidak dikenali?** Berarti folder hasil ekstrak bukan
+  `Downloads\thinkpad-battery-threshold-main`, atau *Start in* shortcut masih menunjuk ke
+  folder lain. Ikuti bagian "Kalau folder hasil ekstrak berbeda" di atas.
+- **File ZIP dari internet diblokir Windows?** Klik kanan `ChargeThreshold.exe` →
+  **Properties** → centang **Unblock** → **OK**.
 - **Baterai tidak berubah?** Coba jalankan `ChargeThreshold.exe status` dulu untuk
   memastikan program terbaca, lalu jalankan perintah `on`/`off` lagi.
 - **Tidak mau pakai shortcut?** Jalankan langsung perintahnya lewat CMD seperti pada
