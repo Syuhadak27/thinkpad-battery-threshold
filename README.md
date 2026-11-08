@@ -8,20 +8,7 @@ Ini adalah kumpulan **shortcut (pintasan)** yang memakai program resmi Lenovo be
 Kamu **tidak perlu hak Administrator** dan **tidak perlu install Lenovo Vantage**.
 
 ---
-
-## Latar belakang (singkat)
-
-Laptop kerja saya dikunci oleh IT: tidak bisa install aplikasi dari Microsoft Store dan
-akun saya bukan admin. Padahal batas pengisian baterai di ThinkPad biasanya diatur lewat
-Lenovo Vantage.
-
-Ternyata pengaturan itu sebenarnya ditangani oleh driver *Lenovo Power and Battery*, dan
-driver tersebut bisa dipicu langsung oleh program kecil buatan Lenovo sendiri:
-**`ChargeThreshold.exe`**. Program ini cukup dijalankan lewat CMD (tidak harus sebagai
-admin) dengan angka persentase yang diinginkan.
-
-Karena antivirus saya memblokir file `.bat`, saya membuat **shortcut ke CMD** yang
-menjalankan perintah tersebut. Itulah isi folder ini.
+Wajib install driver (sudah saya sertakan di dalam folder driver)
 
 Program aslinya bisa diunduh di sini (sudah saya sertakan juga di folder ini):
 <https://download.lenovo.com/pccbbs//thinkvantage_en/metroapps/Vantage/ChargeThreshold/ChargeThreshold.exe>
@@ -47,14 +34,8 @@ Program aslinya bisa diunduh di sini (sudah saya sertakan juga di folder ini):
 
 1. **Download repo ini sebagai ZIP** (tombol hijau **Code** → **Download ZIP**).
 2. Buka folder **Downloads**, lalu klik kanan file ZIP → **Extract Here**
-   (atau "Extract to `thinkpad-battery-threshold-main\`").
-3. Pastikan hasil ekstrak ada di:
-   ```
-   C:\Users\<nama-kamu>\Downloads\thinkpad-battery-threshold-main
-   ```
-   dan `ChargeThreshold.exe` berada di folder yang sama dengan file `.lnk`.
-4. **Klik dua kali** shortcut sesuai kebutuhan, misalnya `Battery 80%.lnk`.
-5. Jendela CMD akan terbuka sebentar, menjalankan perintah, lalu menutup sendiri
+3.. **Klik dua kali** shortcut sesuai kebutuhan, misalnya `Battery 80%.lnk`.
+4. Jendela CMD akan terbuka sebentar, menjalankan perintah, lalu menutup sendiri
    setelah 5 detik. Selesai.
 
 Tidak perlu mengedit apa pun selama kamu mengekstrak ke folder **Downloads** dan
