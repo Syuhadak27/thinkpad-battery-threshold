@@ -57,9 +57,11 @@ Klik dua kali salah satu shortcut di folder utama:
 | Shortcut | Gunanya |
 |----------|---------|
 | `Battery threshold state.lnk` | Melihat batas baterai yang sedang aktif. |
-| `Battery 80%.lnk` | Baterai berhenti diisi saat 80%. |
-| `Battery 90%.lnk` | Berhenti di 90%, mulai mengisi lagi saat turun ke 80%. |
 | `Battery 70%.lnk` | Berhenti di 70%, mulai mengisi lagi saat turun ke 60%. |
+| `Battery 80%.lnk` | Baterai berhenti diisi saat 80%. |
+| `Battery 85%.lnk` | Berhenti di 85%, mulai mengisi lagi saat turun ke 70%. |
+| `Battery 90%.lnk` | Berhenti di 90%, mulai mengisi lagi saat turun ke 80%. |
+| `Battery 95%.lnk` | Berhenti di 95%, mulai mengisi lagi saat turun ke 85%. |
 | `Battery 100%.lnk` | Mematikan batas, baterai mengisi sampai penuh 100%. |
 | `Battery custom threshold.lnk` | Mengatur batas sendiri (angka bebas). |
 
@@ -89,7 +91,7 @@ foldernya, ubah **Start in** pada setiap shortcut:
 1. Klik **kanan** shortcut → **Properties**.
 2. Di kolom **Start in**, isi dengan lokasi folder tempat file ini berada.
 3. Klik **OK**.
-4. Ulangi untuk 5 shortcut lainnya.
+4. Ulangi untuk 7 shortcut lainnya.
 
 ---
 
