@@ -22,7 +22,7 @@ selesai.
 
 ---
 
-## Langkah 1 — Pilih shortcut
+## Pilihan Shortcut
 
 Klik dua kali salah satu shortcut di folder utama:
 
@@ -40,37 +40,13 @@ Klik dua kali salah satu shortcut di folder utama:
 Jendela hitam (CMD) akan terbuka sebentar, menjalankan perintah, lalu menutup sendiri
 setelah 5 detik. Itu normal — tidak perlu menekan apa pun.
 
-### Kalau ingin mengatur sendiri (custom)
+### Mengatur sendiri (custom)
 
 1. Klik dua kali **`Battery custom threshold.lnk`**.
 2. Akan muncul pertanyaan **`Stop charging at:`** → ketik angka batas atas, misalnya `85`, lalu Enter.
 3. Muncul **`Start charging below:`** → ketik angka batas bawah, misalnya `75`, lalu Enter.
 4. Selesai. Baterai akan berhenti di 85% dan mulai mengisi lagi saat turun di bawah 75%.
 
-
----
-
-## Menjalankan tanpa shortcut (opsional)
-
-Kalau lebih suka lewat CMD:
-
-1. Buka folder ini di Explorer.
-2. Klik pada address bar, ketik `cmd`, lalu Enter.
-3. Ketik salah satu perintah:
-
-```bat
-ChargeThreshold.exe status
-ChargeThreshold.exe on 80
-ChargeThreshold.exe on 70 60
-ChargeThreshold.exe off
-```
-
-Arti perintah:
-
-- `on 80` → berhenti mengisi di 80%.
-- `on 70 60` → berhenti di 70%, mulai lagi di 60%.
-- `off` → tanpa batas, mengisi sampai 100%.
-- `status` → melihat batas saat ini.
 
 ---
 
