@@ -11,7 +11,8 @@
 ## 📖 Tentang
 
 **ThinkPad Battery Threshold** adalah utilitas ringan untuk mengatur ambang batas pengisian baterai pada laptop Lenovo ThinkPad. Dengan membatasi pengisian daya pada rentang tertentu, umur dan kesehatan baterai dapat lebih terjaga dalam jangka panjang.
-
+![Screenshot](driver/menu.jpg)
+![Screenshot](driver/status.jpg)
 ---
 
 ## ✨ Fitur
