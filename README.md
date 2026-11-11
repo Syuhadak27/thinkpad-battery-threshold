@@ -8,49 +8,21 @@ selesai.
 
 ---
 
-## Ringkasan cepat
+## Cara menggunakan
 
 1. **Extract** file ZIP di folder **Downloads** (klik kanan ZIP → **Extract Here**).
-2. Jalankan **driver** satu kali saja (folder `driver`).
-3. **Klik dua kali** shortcut yang kamu mau.
+2. Jalankan **driver** satu kali saja (folder `driver`) jika belum menginstall driver,
+3. Jalankan **ChargeThreshold.exe** sebagai administrator,
+4. Lali **Klik dua kali** shortcut yang kamu mau.
 
 ---
 
-## Langkah 1 — Extract di Downloads
-
-1. Download repo ini: tombol hijau **Code** → **Download ZIP**.
-2. Buka folder **Downloads**.
-3. Klik kanan file ZIP → **Extract Here**.
-
-Setelah di-extract akan muncul folder bernama:
-
-```
-thinkpad-battery-threshold-main
-```
-
-> **Penting:** jangan pindahkan dan jangan ganti nama folder itu.
-> Shortcut sudah otomatis mencari folder tersebut di Downloads.
-
-Kalau Windows bilang file berasal dari internet dan diblokir, klik kanan file ZIP →
+> **Penting:** Kalau Windows bilang file berasal dari internet dan diblokir, klik kanan file ZIP →
 **Properties** → centang **Unblock** → **OK**, lalu extract ulang.
 
 ---
 
-## Langkah 2 — Install driver (sekali saja)
-
-Driver ini dibutuhkan agar baterai bisa diatur.
-
-1. Buka folder **`driver`**.
-2. Klik dua kali **`LenovoPowerManagement.exe`**.
-3. Ikuti proses install (klik **Next** sampai **Finish**).
-4. Kalau diminta **restart**, restart laptop.
-
-> Langkah ini butuh izin Administrator (klik **Yes** kalau muncul konfirmasi Windows).
-> Ini satu-satunya bagian yang butuh izin Administrator.
-
----
-
-## Langkah 3 — Pilih shortcut
+## Langkah 1 — Pilih shortcut
 
 Klik dua kali salah satu shortcut di folder utama:
 
@@ -75,23 +47,6 @@ setelah 5 detik. Itu normal — tidak perlu menekan apa pun.
 3. Muncul **`Start charging below:`** → ketik angka batas bawah, misalnya `75`, lalu Enter.
 4. Selesai. Baterai akan berhenti di 85% dan mulai mengisi lagi saat turun di bawah 75%.
 
----
-
-## Kalau folder tidak ada di Downloads
-
-Shortcut sudah diarahkan ke folder ini:
-
-```
-%USERPROFILE%\Downloads\thinkpad-battery-threshold-main
-```
-
-Kalau kamu extract ke tempat lain (misalnya `Documents` atau `D:\`) atau mengganti nama
-foldernya, ubah **Start in** pada setiap shortcut:
-
-1. Klik **kanan** shortcut → **Properties**.
-2. Di kolom **Start in**, isi dengan lokasi folder tempat file ini berada.
-3. Klik **OK**.
-4. Ulangi untuk 7 shortcut lainnya.
 
 ---
 
@@ -124,11 +79,6 @@ Arti perintah:
 - **Jendela CMD muncul lalu langsung hilang.**
   Normal. Perintah sudah dijalankan dan jendela menutup otomatis setelah 5 detik.
 
-- **Muncul pesan `ChargeThreshold` tidak dikenali.**
-  Folder hasil extract bukan `Downloads\thinkpad-battery-threshold-main`, atau
-  **Start in** shortcut menunjuk ke folder lain. Ikuti bagian
-  "Kalau folder tidak ada di Downloads" di atas.
-
 - **Baterai tidak berubah.**
   Pastikan driver sudah di-install dan laptop sudah di-restart. Coba jalankan
   `Battery threshold state.lnk` dulu untuk memastikan program terbaca.
@@ -140,7 +90,7 @@ Arti perintah:
 
 ## Kompatibilitas
 
-Dari pengujian terbatas, sepertinya semua ThinkPad seri **XX30** sampai model terbaru
+Dari pengujian terbatas, sepertinya semua ThinkPad seri **X260** sampai model terbaru
 didukung. Sudah diuji di:
 
 > X230, T530, T570, X280, X260
